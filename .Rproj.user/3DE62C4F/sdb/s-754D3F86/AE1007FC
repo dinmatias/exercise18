@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\nlibrary(shiny)\n\n\nsource(\"functions/uifunctions.R\")\n\nshinyUI(\n  fluidPage(\n    \n    # theme = \"checkbox.css\",\n  \n    tags$head(tags$style(HTML(' .irs-min, .irs-max {\n                              visibility: hidden !important;\n                              }'))),\n    shinyjs::useShinyjs(),\n\n    h4(\"Exercise 18: Microevolutionary Processes and the Hardy-Weindberg Principle\"),\n    \n    hr(),\n    \n    h4(\"Input Section\"),\n    \n    hr(),\n    \n    driftcheckbox, \n    \n    \n    driftCollapse,\n    \n    hr(),\n    \n    botcheckbox,\n    \n    bottleneckCollapse,\n    \n    hr(),\n    \n    gfcheckbox, \n    \n    \n    geneflowCollapse,\n    \n    hr(),\n    \n    \n    selcheckbox,\n    \n    \n    selectionCollapse,\n    \n    hr(),\n    \n    fluidRow(column(2, offset = 5, actionButton(\"sim\", \"Simulate\"))),\n    \n    hr(),\n    \n    # Output Page\n    h4(\"Output Section\"),\n    \n    hr(),\n    \n    HTML('<button id=\"showPlot\" type=\"button\" data-toggle=\"collapse\" \n         data-target=#plotCollapse aria-expanded=\"false\" \n         aria-controls=plotCollapse class=\"btn btn-default action-button\" \n         data-text-swap=\"Hide Plot\">Show Plot</button>'),\n    \n    hr(),\n    \n    plotOutput,\n    \n    hr(),\n    \n    HTML('<button id=\"showCensus\" type=\"button\" data-toggle=\"collapse\" \n         data-target=#censusCollapse aria-expanded=\"false\" \n         aria-controls=censusCollapse class=\"btn btn-default action-button\" \n         data-text-swap=\"Hide Plot\">Show Census Result</button>'),\n    \n    censusOutput,\n    \n    hr()\n    \n    )\n  \n  \n    )\n",
+    "created" : 1504548668498.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2718838947",
+    "id" : "AE1007FC",
+    "lastKnownWriteTime" : 1504548865,
+    "last_content_update" : 1504548865847,
+    "path" : "D:/Dropbox/exercise18/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
